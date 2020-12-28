@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ThemeInterface } from '../../styles/theme';
+import Image from 'next/image';
 import { SecondaryButton } from '../../styles/globalStyles';
 
 export const MainContainer = styled.div``;
@@ -52,24 +53,26 @@ export const HeroTitle = styled.h1`
 `;
 
 export const ImageContainer = styled.div`
-  width: 100%;
+  width: 90%;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: -6rem;
+
   @media (min-width: 640px) {
     margin-top: -11rem;
+    max-width: 70%;
   }
 `;
 
-export const NextImage = styled.img`
+export const NextImage = styled(Image)`
+  z-index: 1;
   display: block;
   margin: auto;
   width: 90%;
   max-width: 1400px;
   height: auto;
-
-  @media (min-width: 640px) {
-    width: 80%;
-  }
 `;
 
 export const ImageDescriptionContainer = styled.div`

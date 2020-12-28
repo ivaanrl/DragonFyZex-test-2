@@ -12,6 +12,7 @@ export const Container = styled(motion.div)`
   overflow: scroll;
   padding-top: 64px;
   min-height: 100vh;
+  z-index: 10;
 `;
 
 export const MobileOptionsContainer = styled.div`
