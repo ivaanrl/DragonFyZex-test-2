@@ -3,7 +3,9 @@ import { ThemeInterface } from '../../styles/theme';
 import Image from 'next/image';
 import { SecondaryButton } from '../../styles/globalStyles';
 
-export const MainContainer = styled.div``;
+export const MainContainer = styled.div`
+  min-width: 99vw;
+`;
 
 export const HeroTitleContainer = styled.div`
   background-color: ${(props) => (props.theme as ThemeInterface).yellow};
