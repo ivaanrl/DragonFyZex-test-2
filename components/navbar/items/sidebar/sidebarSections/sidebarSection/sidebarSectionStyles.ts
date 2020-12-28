@@ -9,6 +9,8 @@ export const Container = styled.div`
 export const Title = styled.div`
   font-size: 0.875rem;
   line-height: 1.25rem;
+  padding-left: 6px;
+  padding-right: 6px;
   color: ${(props) => (props.theme as ThemeInterface).skGreen};
 `;
 

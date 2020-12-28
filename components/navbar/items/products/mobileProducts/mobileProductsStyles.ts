@@ -8,6 +8,7 @@ export const AccordionButton = styled(motion.button)`
   align-items: center;
   justify-content: space-between;
   padding-right: 34px;
+  padding-left: 0;
   width: 100%;
   border: none;
   font-family: 'Open Sans';

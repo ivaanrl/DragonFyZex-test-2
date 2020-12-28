@@ -51,6 +51,7 @@ export const NavbarSectionLink = styled(NavbarLink)`
   line-height: 2rem;
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+  padding-left: 0;
 
   @media (min-width: 1024px) {
     font-size: 1rem;
