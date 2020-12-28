@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Navbar isOpen={isMobileMenuOpen} setIsOpen={setIsMobileMenuOpen} />
         <AnimatePresence>

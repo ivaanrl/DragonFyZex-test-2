@@ -54,6 +54,19 @@ a{
   text-decoration:none;
 }
 
+button{
+  border:none;
+  font-family:'Open Sans';
+  padding:0;
+
+  &:focus{
+    outline:none;
+  }
+
+  &:hover{
+    cursor:pointer;
+  }
+}
 `;
 
 export const Button = styled.button`
