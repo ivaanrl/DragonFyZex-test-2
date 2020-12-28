@@ -1,7 +1,7 @@
 import {
   Button,
   Container,
-  ItemsButton,
+  ItemsContainer,
   ItemSubtitle,
   ItemText,
   TextAndSubtitleContainer,
@@ -36,7 +36,7 @@ const SidebarSection = ({ title, main, items }: Props) => {
       {Object.keys(items).map((item) => {
         const subtitle = items[item].subtitle;
         return (
-          <ItemsButton key={item}>
+          <ItemsContainer key={item} href="#">
             <TextAndSubtitleContainer>
               <ItemText className="font-semibold text-lg">{item} </ItemText>
               <ItemSubtitle className="text-sm">{subtitle} </ItemSubtitle>
@@ -53,7 +53,7 @@ const SidebarSection = ({ title, main, items }: Props) => {
                 fill="#0A2533"
               />
             </svg>
-          </ItemsButton>
+          </ItemsContainer>
         );
       })}
     </Container>

@@ -37,7 +37,7 @@ export const Button = styled.button`
   }
 `;
 
-export const ItemsButton = styled.button`
+export const ItemsContainer = styled.a`
   background-color: ${(props) => (props.theme as ThemeInterface).lightGrey};
   font-family: 'Open Sans';
   border: none;
@@ -48,6 +48,9 @@ export const ItemsButton = styled.button`
   justify-content: space-between;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+
+  padding-left: 6px;
+  padding-right: 6px;
 
   &:hover {
     color: ${(props) => (props.theme as ThemeInterface).skGreen};
