@@ -13,6 +13,7 @@ export const Title = styled.div`
 `;
 
 export const Button = styled.button`
+  font-family: 'Open Sans';
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -26,6 +27,7 @@ export const Button = styled.button`
 
   &:hover {
     color: ${(props) => (props.theme as ThemeInterface).skGreen};
+    cursor: pointer;
   }
 
   &:focus {
@@ -34,6 +36,7 @@ export const Button = styled.button`
 `;
 
 export const ItemsButton = styled.button`
+  font-family: 'Open Sans';
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -44,6 +47,7 @@ export const ItemsButton = styled.button`
 
   &:hover {
     color: ${(props) => (props.theme as ThemeInterface).text};
+    cursor: pointer;
   }
 
   &:focus {

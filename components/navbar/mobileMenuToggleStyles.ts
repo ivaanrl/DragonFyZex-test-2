@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { ThemeInterface } from '../../styles/theme';
 
 export const Button = styled.button<{ isOpen: boolean }>`
+  font-family: 'Open Sans';
   border: 1px solid ${(props) => (props.theme as ThemeInterface).borderGreyDark};
   border-radius: 9999px;
   padding: 0.5rem;
@@ -19,6 +20,10 @@ export const Button = styled.button<{ isOpen: boolean }>`
 
   @media (min-width: 1024px) {
     display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 `;
 

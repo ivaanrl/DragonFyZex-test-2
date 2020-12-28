@@ -120,4 +120,12 @@ export const ImageDescriptionButton = styled(SecondaryButton)`
   @media (min-width: 640px) {
     width: auto;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 `;

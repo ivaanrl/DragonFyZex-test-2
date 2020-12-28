@@ -2,12 +2,21 @@ import styled from 'styled-components';
 import { ThemeInterface } from './theme';
 
 export const Button = styled.button`
+  font-family: 'Open Sans';
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   border-radius: 9999px;
   font-weight: 600;
   font-size: 16px;
   border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const PrimaryButton = styled(Button)`

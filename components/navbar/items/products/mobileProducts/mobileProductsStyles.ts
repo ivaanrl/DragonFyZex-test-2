@@ -8,6 +8,12 @@ export const AccordionButton = styled(motion.button)`
   justify-content: space-between;
   padding-right: 34px;
   width: 100%;
+  border: none;
+  font-family: 'Open Sans';
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &:focus {
     outline: none;

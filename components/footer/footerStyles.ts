@@ -49,6 +49,8 @@ export const Logo = styled.img`
 `;
 
 export const FooterButton = styled.button`
+  border: none;
+  font-family: 'Open Sans';
   font-size: 13px;
   padding: 20px;
   padding-right: 40px;
@@ -65,6 +67,10 @@ export const FooterButton = styled.button`
     border: 1px solid ${(props) => (props.theme as ThemeInterface).white};
     color: ${(props) => (props.theme as ThemeInterface).white};
     cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
   }
 `;
 

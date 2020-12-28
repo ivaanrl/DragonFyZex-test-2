@@ -51,8 +51,13 @@ export const GetStartedButton = styled(PrimaryButton)`
   height: 4rem;
   padding-left: 44px;
   padding-right: 44px;
-
+  border: none;
+  font-family: 'Open Sans';
   &:hover {
     background-color: ${(props) => (props.theme as ThemeInterface).lightGrey};
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
   }
 `;
