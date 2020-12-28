@@ -32,6 +32,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
       animate="visible"
       initial="hidden"
       exit="hidden"
+      key={new Date().toString()}
     >
       <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <MobileOptionsContainer>
