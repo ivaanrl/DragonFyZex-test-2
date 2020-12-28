@@ -55,18 +55,36 @@ export const InputContainer = styled.div`
   border: 1px solid ${(props) => (props.theme as ThemeInterface).borderGrey};
 `;
 
-export const SubscribeButton = styled(PrimaryButton)`
+export const SubscribeButtonLG = styled(PrimaryButton)`
   height: 3rem;
+  display: none;
+
+  @media (min-width: 640px) {
+    display: block;
+  }
+`;
+
+export const SubscribeButtonSM = styled(PrimaryButton)`
+  height: 3rem;
+
+  display: block;
+
+  @media (min-width: 640px) {
+    display: none;
+  }
 `;
 
 export const Input = styled.input`
   border: none;
   border-radius: 9999px;
   padding-left: 20px;
-  font-size: 18px;
   width: 100%;
-
+  font-size: 15px;
   &:focus {
     outline: none;
+  }
+
+  @media (min-width: 640px) {
+    font-size: 18px;
   }
 `;

@@ -4,7 +4,8 @@ import {
   InputContainer,
   Input,
   ItemsContainer,
-  SubscribeButton,
+  SubscribeButtonLG,
+  SubscribeButtonSM,
 } from './subscribeStyles';
 
 interface Props {
@@ -19,7 +20,8 @@ const Subscribe = ({ title, isYellow }: Props) => {
         <Title>{title}</Title>
         <InputContainer>
           <Input placeholder="Enter your email address" />
-          <SubscribeButton>Subscribe</SubscribeButton>
+          <SubscribeButtonLG>Subscribe</SubscribeButtonLG>
+          <SubscribeButtonSM>Go</SubscribeButtonSM>
         </InputContainer>
       </ItemsContainer>
     </Container>
