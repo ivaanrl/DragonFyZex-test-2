@@ -10,7 +10,9 @@ const FooterGrid = ({ title, items }: Props) => {
     <>
       <GridTitle>{title}</GridTitle>
       {items.map((item) => (
-        <GridItem href="#">{item}</GridItem>
+        <GridItem href="#" key={`${title}-${item}`}>
+          {item}
+        </GridItem>
       ))}
     </>
   );

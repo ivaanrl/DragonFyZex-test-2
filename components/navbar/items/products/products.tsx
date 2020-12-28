@@ -7,14 +7,14 @@ const Products = () => {
   const [showSidebar, setShowSidebar] = useState<boolean>(false);
 
   return (
-    <motion.a>
+    <motion.div>
       <NavbarSectionLink onMouseEnter={() => setShowSidebar(true)}>
         Products
       </NavbarSectionLink>
       <AnimatePresence>
         {showSidebar && <Sidebar setShowSidebar={setShowSidebar} />}
       </AnimatePresence>
-    </motion.a>
+    </motion.div>
   );
 };
 

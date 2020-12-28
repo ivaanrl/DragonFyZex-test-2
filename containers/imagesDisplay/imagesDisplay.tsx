@@ -21,6 +21,7 @@ const ImagesDisplay = ({ imagesInfo, showLoadMore }: Props) => {
             picture={picture}
             category={category}
             subtitle={subtitle}
+            key={picture}
           />
         ))}
       </ImagesDisplayContainer>
