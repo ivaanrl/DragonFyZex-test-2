@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { ThemeInterface } from '../../../../../styles/theme';
 
 export const AccordionButton = styled(motion.button)`
   display: flex;
@@ -10,6 +11,7 @@ export const AccordionButton = styled(motion.button)`
   width: 100%;
   border: none;
   font-family: 'Open Sans';
+  background-color: ${(props) => (props.theme as ThemeInterface).lightGrey};
 
   &:hover {
     cursor: pointer;
