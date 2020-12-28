@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-family:'Open Sans';
+  background-color: #F5F7FA;
 }
 ol, ul {
 	list-style: none;
@@ -47,19 +49,11 @@ table {
 	border-spacing: 0;
 }
 
-button{
-  border:none;
-  font-family:'Open Sans';
-  padding:0;
-
-  &:focus{
-    outline:none;
-  }
-
-  &:hover{
-    cursor:pointer;
-  }
+a{
+  color:inherit;
+  text-decoration:none;
 }
+
 `;
 
 export const Button = styled.button`

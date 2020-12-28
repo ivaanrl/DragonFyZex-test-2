@@ -2,7 +2,6 @@ import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import MobileMenu from '../components/navbar/mobileMenu';
 import Navbar from '../containers/navbar/navbar';
-import '../styles/globals.css';
 import { theme } from '../styles/theme';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from '../styles/globalStyles';
