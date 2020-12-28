@@ -13,7 +13,9 @@ export const Title = styled.div`
 `;
 
 export const Button = styled.button`
+  background-color: ${(props) => (props.theme as ThemeInterface).lightGrey};
   font-family: 'Open Sans';
+  border: none;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -36,7 +38,9 @@ export const Button = styled.button`
 `;
 
 export const ItemsButton = styled.button`
+  background-color: ${(props) => (props.theme as ThemeInterface).lightGrey};
   font-family: 'Open Sans';
+  border: none;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -46,7 +50,7 @@ export const ItemsButton = styled.button`
   padding-bottom: 0.75rem;
 
   &:hover {
-    color: ${(props) => (props.theme as ThemeInterface).text};
+    color: ${(props) => (props.theme as ThemeInterface).skGreen};
     cursor: pointer;
   }
 
