@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { ThemeInterface } from '../../styles/theme';
-import Image from 'next/image';
 import { SecondaryButton } from '../../styles/globalStyles';
 
 export const MainContainer = styled.div``;
