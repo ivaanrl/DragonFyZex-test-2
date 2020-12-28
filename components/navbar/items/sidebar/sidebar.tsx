@@ -47,6 +47,7 @@ const Sidebar = ({ setShowSidebar }: Props) => {
         animate="visible"
         exit="hidden"
         onClick={() => setShowSidebar(false)}
+        key={new Date().toString()}
       ></Modal>
       <SidebarContainer
         variants={sidebarVariants}
@@ -54,6 +55,7 @@ const Sidebar = ({ setShowSidebar }: Props) => {
         animate="visible"
         exit="hidden"
         onMouseLeave={() => setShowSidebar(false)}
+        key={new Date().toString()}
       >
         <SidebarLinksContainer>
           <NavbarSectionLink href="#">Products</NavbarSectionLink>
