@@ -9,6 +9,9 @@ import {
   ImageDescriptionButton,
   ImageDescriptionButtonContainer,
 } from './heroStyles';
+import loadable from '@loadable/component';
+
+const HeroImage = loadable(() => import('./heroImage'));
 
 const Hero = () => {
   return (
@@ -20,14 +23,7 @@ const Hero = () => {
           at how we’re helping them succeed.
         </HeroTitle>
       </HeroTitleContainer>
-      <ImageContainer>
-        <NextImage
-          width={1801}
-          height={933}
-          src="/images/hero/firstImage.png"
-          alt="placeholder image"
-        />
-      </ImageContainer>
+      <HeroImage />
       <ImageDescriptionContainer>
         <ImageDescriptionText>
           Ac tincidunt massa laoreet eu, phasellus at adipiscing. Ornare
