@@ -13,3 +13,26 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.hero-image-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -6rem;
+
+  @media (min-width: 640px) {
+    margin-top: -11rem;
+    max-width: 70%;
+  }
+}
+
+.hero-image {
+  z-index: 1;
+  display: block;
+  margin: auto;
+  width: 90%;
+  max-width: 1400px;
+  height: auto;
+}
