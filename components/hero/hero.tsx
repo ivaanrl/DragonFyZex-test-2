@@ -9,7 +9,6 @@ import {
   ImageDescriptionButton,
   ImageDescriptionButtonContainer,
 } from './heroStyles';
-import loadable from '@loadable/component';
 import HeroImage from './heroImage';
 
 const Hero = () => {

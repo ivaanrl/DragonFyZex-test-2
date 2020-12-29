@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ThemeInterface } from '../../styles/theme';
 
 export const Container = styled(motion.div)`
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;

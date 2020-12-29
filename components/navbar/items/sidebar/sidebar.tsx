@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import React, { Dispatch, SetStateAction } from 'react';
 import { NavbarSectionLink } from '../../../../styles/globalStyles';
 import SidebarSections from './sidebarSections/sidebarSections';

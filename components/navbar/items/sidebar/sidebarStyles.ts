@@ -3,19 +3,18 @@ import { motion } from 'framer-motion';
 import { ThemeInterface } from '../../../../styles/theme';
 
 export const Modal = styled(motion.div)`
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   background-color: black;
-  height: 100%;
+  min-height: 100vh;
   z-index: 10;
 `;
 
 export const SidebarContainer = styled(motion.div)`
-  height: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -24,7 +23,8 @@ export const SidebarContainer = styled(motion.div)`
   width: max-content;
   overflow: hidden;
   padding-left: 34px;
-  z-index: 20;
+  min-height: 100vh;
+  z-index: 10;
 `;
 
 export const SidebarLinksContainer = styled.div`
