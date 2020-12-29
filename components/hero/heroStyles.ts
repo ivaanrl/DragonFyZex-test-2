@@ -81,7 +81,6 @@ export const ImageDescriptionContainer = styled.div`
   max-width: 1000px;
   margin: auto;
   margin-top: 100px;
-  margin-bottom: 100px;
 
   @media (min-width: 640px) {
     margin-bottom: 200px;

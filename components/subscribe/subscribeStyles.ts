@@ -11,14 +11,13 @@ export const Container = styled.div<{ isYellow: boolean }>`
   align-items: center;
   justify-content: center;
   margin-top: 100px;
-  margin-bottom: 200px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 90px;
 
   @media (min-width: 640px) {
     padding-top: 0;
     padding-top: 0;
-    height: 50vh;
+    height: 55vh;
   }
 `;
 

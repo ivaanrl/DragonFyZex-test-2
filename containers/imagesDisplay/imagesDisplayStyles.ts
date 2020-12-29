@@ -19,6 +19,7 @@ export const ImagesDisplayContainer = styled.div`
   @media (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
+  margin-top: 100px;
 `;
 
 export const LoadMoreButton = styled(PrimaryButton)`
