@@ -26,13 +26,13 @@ const Accordion = ({
           animate={{
             rotate: isOpen ? 180 : 0,
           }}
-          style={{ maxHeight: '8px' }}
         >
           <svg
             width="11"
             height="8"
             viewBox="0 0 11 8"
             xmlns="http://www.w3.org/2000/svg"
+            style={{ height: '11px', width: '11px' }}
           >
             <path d="M10.9133 5.65273L9.51328 7.05273L5.51328 3.05273L1.51328 7.05273L0.113281 5.65273L5.51328 0.252735L10.9133 5.65273Z" />
           </svg>
