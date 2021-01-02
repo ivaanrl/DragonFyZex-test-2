@@ -1,5 +1,6 @@
 html,
-body {
+body,
+p {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans';
@@ -20,4 +21,8 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+p {
+  margin: 0;
 }

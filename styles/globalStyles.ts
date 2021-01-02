@@ -21,10 +21,10 @@ export const Button = styled.button`
 
 export const PrimaryButton = styled(Button)`
   background-color: ${(props) => (props.theme as ThemeInterface).skGreen};
-  color:${(props) => (props.theme as ThemeInterface).white};
+  color: ${(props) => (props.theme as ThemeInterface).white};
 
-  &:hover{
-    background-color ${(props) => (props.theme as ThemeInterface).skBlack};
+  &:hover {
+    background-color: ${(props) => (props.theme as ThemeInterface).skBlack};
   }
 `;
 

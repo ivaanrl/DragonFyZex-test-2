@@ -8,6 +8,7 @@ export interface ThemeInterface {
   skBlack: string;
   lightGrey: string;
   lightGreyTransparent: string;
+  borderGreyLight: string;
   borderGrey: string;
   borderGreyDark: string;
 }
@@ -22,6 +23,12 @@ export const theme: ThemeInterface = {
   skBlack: '#0A2533',
   lightGrey: '#F5F7FA',
   lightGreyTransparent: 'rgba(245,247,250,0.2)',
+  borderGreyLight: 'rgba(10, 37, 51, 0.1)',
   borderGrey: 'rgb(209,213,219)',
   borderGreyDark: 'rgb(156,163,175)',
+};
+
+export const ScreenSizes = {
+  sm: 640,
+  lg: 1024,
 };

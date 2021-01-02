@@ -18,7 +18,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "containers/navbar/items/navbarLInks"
+    "containers/navbar/items/navbarLInks",
+    "stories/atoms/button/.stories.tsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -4,16 +4,17 @@ import Image from 'next/image';
 import { SecondaryButton } from '../../styles/globalStyles';
 
 export const MainContainer = styled.div`
-  min-width: 99vw;
+  overflow: hidden;
 `;
 
 export const HeroTitleContainer = styled.div`
   background-color: ${(props) => (props.theme as ThemeInterface).yellow};
   display: flex;
   align-items: center;
-  padding-bottom: 26rem;
-  padding-top: 8rem;
-  height: 95vh;
+  justify-content: center;
+  padding-top: 12rem;
+  padding-bottom: 18rem;
+  height: 80vh;
 
   @media (min-height: 800px) {
     height: 80vh;
@@ -22,6 +23,7 @@ export const HeroTitleContainer = styled.div`
   @media (min-width: 640px) {
     height: 100vh;
     padding-top: 16rem;
+    padding-bottom: 26rem;
   }
 `;
 

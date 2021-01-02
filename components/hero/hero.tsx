@@ -1,36 +1,31 @@
 import {
   MainContainer,
   HeroTitleContainer,
-  HeroTitle,
-  ImageContainer,
-  NextImage,
-  ImageDescriptionText,
-  ImageDescriptionContainer,
-  ImageDescriptionButton,
-  ImageDescriptionButtonContainer,
+  ImageContainer as ImgContainer,
 } from './heroStyles';
-import HeroImage from './heroImage';
+import { Title } from '../../stories/atoms/title/styles';
+import { theme } from '../../styles/theme';
+import React from 'react';
+import { ImageContainer } from '../../stories/atoms/imageContainer';
 
 const Hero = () => {
   return (
     <MainContainer>
       <HeroTitleContainer>
-        <HeroTitle>
+        <Title fontSize="extra-large" highlightColor={theme.white}>
           Retailers and brands <span>transform </span>
           their sales and marketing strategies with Skupos. Have a closer look
           at how we’re helping them succeed.
-        </HeroTitle>
+        </Title>
       </HeroTitleContainer>
-      <HeroImage />
-      <ImageDescriptionContainer>
-        <ImageDescriptionText>
-          Ac tincidunt massa laoreet eu, phasellus at adipiscing. Ornare
-          ultricies aliquam, ultrices neque. Amet ac varius scelerisque orci.
-        </ImageDescriptionText>
-        <ImageDescriptionButtonContainer>
-          <ImageDescriptionButton>See how they did it</ImageDescriptionButton>
-        </ImageDescriptionButtonContainer>
-      </ImageDescriptionContainer>
+      <ImgContainer>
+        <ImageContainer
+          imgWidth={1801}
+          imgHeight={933}
+          src="/images/hero/firstImage.png"
+          alt="placeholder image"
+        />
+      </ImgContainer>
     </MainContainer>
   );
 };

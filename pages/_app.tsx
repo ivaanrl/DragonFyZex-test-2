@@ -1,29 +1,68 @@
-const MobileMenu = loadable(() => import('../components/navbar/mobileMenu'));
-import Navbar from '../containers/navbar/navbar';
-import { AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
 import '../styles/globals.css';
 import { theme } from '../styles/theme';
 import { ThemeProvider } from 'styled-components';
-import Footer from '../components/footer/footer';
-import loadable from '@loadable/component';
+import { Footer } from '../stories/organisms/footer';
+import { Navbar } from '../stories/organisms/navbar';
 
 function MyApp({ Component, pageProps }) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   return (
     <ThemeProvider theme={theme}>
-      <Navbar isOpen={isMobileMenuOpen} setIsOpen={setIsMobileMenuOpen} />
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <MobileMenu
-            isOpen={isMobileMenuOpen}
-            setIsOpen={setIsMobileMenuOpen}
-          />
-        )}
-      </AnimatePresence>
+      <Navbar backgroundColor={theme.yellow} />
       <Component {...pageProps} />
-      <Footer />
+      <Footer
+        footerGridSectionProps={{
+          footerSectionProps: [
+            {
+              title: 'CONVENIENCE RETAIL',
+              items: [
+                { label: 'Overview', href: '#' },
+                { label: 'Scan Data', href: '#' },
+                { label: 'Engage', href: '#' },
+                { label: 'Pricing', href: '#' },
+              ],
+            },
+            {
+              title: 'ENTERPRISE BRANDS',
+              items: [
+                { label: 'Overview', href: '#' },
+                { label: 'Insights', href: '#' },
+                { label: 'Engage for Brands', href: '#' },
+                { label: 'Predict', href: '#' },
+              ],
+            },
+            {
+              title: 'RESOURCES',
+              items: [
+                { label: 'Customer Stories', href: '#' },
+                { label: 'Blog', href: '#' },
+                { label: 'Product Updates', href: '#' },
+                { label: 'Events', href: '#' },
+                { label: 'Videos', href: '#' },
+                { label: 'Downloads', href: '#' },
+              ],
+            },
+            {
+              title: 'COMPANY',
+              items: [
+                { label: 'About Us', href: '#' },
+                { label: 'Press', href: '#' },
+                { label: 'Careers', href: '#' },
+                { label: 'Contact', href: '#' },
+                { label: 'Referral Program', href: '#' },
+                { label: 'Support', href: '#' },
+              ],
+            },
+          ],
+        }}
+        footerBottomProps={{
+          links: ['TERMS', 'PRIVACY'],
+          socialIcons: [
+            '/images/socials/facebook.svg',
+            '/images/socials/twitter.svg',
+            '/images/socials/linkedin.svg',
+          ],
+        }}
+      />
     </ThemeProvider>
   );
 }
