@@ -2,8 +2,7 @@ import { AnimatePresence } from 'framer-motion';
 import { FC, useState, useEffect } from 'react';
 import { theme } from '../../../styles/theme';
 import { Link } from '../../atoms';
-import LoggedOut from '../../molecules/loggedout';
-import { Logo } from '../../molecules/logo';
+import { Logo, LoggedOut } from '../../molecules/';
 import { MobileNav } from '../mobileNav';
 import { Sidebar } from '../sidebar';
 import {

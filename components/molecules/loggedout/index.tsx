@@ -9,7 +9,7 @@ interface LoggedOutProps {
   toggleOpen: () => void;
 }
 
-const LoggedOut: FC<LoggedOutProps> = ({ isOpen, toggleOpen }) => {
+export const LoggedOut: FC<LoggedOutProps> = ({ isOpen, toggleOpen }) => {
   return (
     <>
       <BigScreenWrapper>

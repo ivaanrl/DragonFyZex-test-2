@@ -6,3 +6,4 @@ export * from './inputCTA';
 export * from './loggedout';
 export * from './menuSection';
 export * from './mobileMenuToggle';
+export * from './logo';

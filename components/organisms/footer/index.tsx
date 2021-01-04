@@ -1,7 +1,5 @@
-import { relative } from 'path';
 import { FC } from 'react';
 import { theme } from '../../../styles/theme';
-import { Button } from '../../atoms';
 import { Divider } from '../../atoms/Divider';
 import {
   FooterBottom,
