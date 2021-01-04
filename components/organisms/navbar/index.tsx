@@ -2,13 +2,14 @@ import { AnimatePresence } from 'framer-motion';
 import { FC, useState, useEffect } from 'react';
 import { theme } from '../../../styles/theme';
 import { Link } from '../../atoms';
-import { Logo, LoggedOut } from '../../molecules/';
+import { Logo, LoggedOut, Modal } from '../../molecules/';
 import { MobileNav } from '../mobileNav';
 import { Sidebar } from '../sidebar';
 import {
   LGandUpWrapper,
   LogoWrapper,
   MobileNavWrapper,
+  ModalWraper,
   SidebarWrapper,
   Wrapper,
 } from './styles';
@@ -31,6 +32,15 @@ const sidebarVariants = {
 };
 
 const mobileMenuVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+  },
+};
+
+const modalVariants = {
   hidden: {
     opacity: 0,
   },
@@ -93,14 +103,24 @@ export const Navbar: FC<NavbarProps> = () => {
 
       <AnimatePresence>
         {showSidebar && (
-          <SidebarWrapper
-            variants={sidebarVariants}
-            initial={'hidden'}
-            animate={'visible'}
-            exit={'hidden'}
-          >
-            <Sidebar onMouseLeave={() => setShowSidebar(false)} />
-          </SidebarWrapper>
+          <>
+            <ModalWraper
+              variants={modalVariants}
+              animate="visible"
+              initial="hidden"
+              exit="hidden"
+            >
+              <Modal />
+            </ModalWraper>
+            <SidebarWrapper
+              variants={sidebarVariants}
+              initial={'hidden'}
+              animate={'visible'}
+              exit={'hidden'}
+            >
+              <Sidebar onMouseLeave={() => setShowSidebar(false)} />
+            </SidebarWrapper>
+          </>
         )}
       </AnimatePresence>
 

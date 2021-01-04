@@ -36,6 +36,8 @@ export const SidebarWrapper = styled(motion.div)`
   bottom: 0;
 `;
 
+export const ModalWraper = styled(motion.div)``;
+
 export const MobileNavWrapper = styled(motion.div)`
   position: absolute;
   top: 4rem;
