@@ -1,4 +1,3 @@
-import { ImageProps } from 'next/image';
 import styled from 'styled-components';
 
 import {
@@ -14,7 +13,7 @@ import {
   MarginProps,
 } from 'styled-system';
 
-export interface ImpageProps
+export interface ImageProps
   extends ColorProps,
     HeightProps,
     WidthProps,
