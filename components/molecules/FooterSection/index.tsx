@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { theme } from '../../../styles/theme';
-import { H2, Link } from '../../atoms/';
+import { H2, Link } from '../../atoms';
 import { Wrapper } from './styles';
 
 export interface FooterSectionProps {

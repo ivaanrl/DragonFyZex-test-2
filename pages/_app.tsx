@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import '../styles/globals.css';
 import { theme } from '../styles/theme';
 import { ThemeProvider } from 'styled-components';
-import { Navbar } from '../components/organisms/navbar';
-import { Footer } from '../components/organisms/footer';
+import { Navbar, Footer } from '../components/organisms';
 
 function MyApp({ Component, pageProps }) {
   const [isMounted, setIsMounted] = useState(false);

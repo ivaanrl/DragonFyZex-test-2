@@ -6,8 +6,8 @@ import {
   FooterSection,
   FooterSectionProps,
 } from '../../molecules';
-import { FooterButton } from '../../molecules/footerButton';
-import { Logo } from '../../molecules/logo';
+import { FooterButton } from '../../molecules/FooterButton';
+import { Logo } from '../../molecules/Logo';
 import {
   ContentWrapper,
   FirstColumn,

@@ -3,12 +3,12 @@ import { theme } from '../../../styles/theme';
 import { Input, Button } from '../../atoms';
 import { Wrapper } from './styles';
 
-export interface InputCTAProps {
+export interface InputCtaProps {
   placeholder: string;
   cta: string;
 }
 
-export const InputCTA: FC<InputCTAProps> = ({ placeholder, cta }) => {
+export const InputCTA: FC<InputCtaProps> = ({ placeholder, cta }) => {
   return (
     <Wrapper>
       <Input

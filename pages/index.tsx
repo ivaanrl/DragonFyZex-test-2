@@ -3,12 +3,10 @@ import { imageSet1, imageSet2 } from '../shared/imageDisplay';
 import React from 'react';
 import { theme } from '../styles/theme';
 import PageTemplate from '../components/templates/index';
-import { Hero } from '../components/organisms/hero';
-import { Button, H2 } from '../components/atoms';
-import { TitleWithCTA } from '../components/organisms/titleWithCTA';
+import { Hero } from '../components/organisms/Hero';
+import { Button, H2, Divider } from '../components/atoms';
 import { InputCTA } from '../components/molecules';
-import { Announcements } from '../components/organisms/announcements';
-import { Divider } from '../components/atoms/Divider';
+import { Announcements, TitleWithCta } from '../components/organisms';
 
 export default function Home() {
   return (
@@ -28,7 +26,7 @@ export default function Home() {
             </>
           }
         />
-        <TitleWithCTA
+        <TitleWithCta
           backgroundColor={theme.colors.white}
           title={
             <H2
@@ -66,7 +64,7 @@ export default function Home() {
         <Divider height={80} />
         <Announcements announcementsInfo={imageSet1} />
         <Divider height={120} />
-        <TitleWithCTA
+        <TitleWithCta
           backgroundColor={theme.colors.yellow}
           title={
             <H2
@@ -100,7 +98,7 @@ export default function Home() {
           </Button>
         </Announcements>
         <Divider height={100} />
-        <TitleWithCTA
+        <TitleWithCta
           backgroundColor={theme.colors.lightGrey}
           title={
             <H2
@@ -116,7 +114,7 @@ export default function Home() {
           }
           cta={<InputCTA placeholder="Enter email address" cta="Subscribe" />}
         />
-        <TitleWithCTA
+        <TitleWithCta
           backgroundColor={theme.colors.skGreen}
           title={
             <H2

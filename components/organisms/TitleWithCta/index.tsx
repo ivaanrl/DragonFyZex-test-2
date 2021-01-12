@@ -1,13 +1,13 @@
 import { FC, ReactNode } from 'react';
 import { ContentWrapper, Wrapper } from './styles';
 
-export interface TitleWithCTAProps {
+export interface TitleWithCtaProps {
   backgroundColor: string;
   title: ReactNode;
   cta: ReactNode;
 }
 
-export const TitleWithCTA: FC<TitleWithCTAProps> = ({
+export const TitleWithCta: FC<TitleWithCtaProps> = ({
   backgroundColor,
   title,
   cta,

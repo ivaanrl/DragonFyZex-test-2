@@ -2,9 +2,9 @@ import { AnimatePresence } from 'framer-motion';
 import { FC, useState, useEffect } from 'react';
 import { theme } from '../../../styles/theme';
 import { Link } from '../../atoms';
-import { Logo, LoggedOut, Modal } from '../../molecules/';
-import { MobileNav } from '../mobileNav';
-import { Sidebar } from '../sidebar';
+import { Logo, LoggedOut, Modal } from '../../molecules';
+import { MobileNav } from '../MobileNav';
+import { Sidebar } from '../Sidebar';
 import {
   LGandUpWrapper,
   LogoWrapper,

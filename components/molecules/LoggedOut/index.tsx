@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { theme } from '../../../styles/theme';
 import { Button } from '../../atoms';
 import { BigScreenWrapper, SmallScreenWrapper } from './styles';
-import MobileMenuToggle from '../mobileMenuToggle';
+import MobileMenuToggle from '../MobileMenuToggle';
 
 interface LoggedOutProps {
   isOpen: boolean;
